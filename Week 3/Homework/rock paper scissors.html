@@ -4,31 +4,33 @@
   <title> Shell Game</title>
   <body>
     <script>
+    function check() {
+      if (choice = "rock") {
+        var choice = 1;
+      } else if (choice = "paper") {
+        var choice = 2;
+      } else if (choice = "scissors") {
+        var choice = 3;
+      }
+
+      function score() {
+        var score = score + 1;
+      }
+
+      function rockPaperScissor() {
+        return Math.floor(3 * Math.random())
+      }
+
     var score = 0;
     var gameRounds = 0;
     var roundsWanted = Number(prompt("How many rounds do you want to play?"));
       while (gameRounds < roundsWanted) {
         var choice = prompt("Rock, Paper, Or Scissors?");
-          function rockPaperScissor() {
-            return Math.floor(3 * Math.random())
-          }
+
         rockPaperScissor();
         var botPlayer = rockPaperScissor();
-          function check() {
-            if (choice = "rock") {
-              var choice = 1;
-            } else if (choice = "paper") {
-              var choice = 2;
-            } else if (choice = "scissors") {
-              var choice = 3;
-            }
 
-            function score() {
-              var score = score + 1;
-
-            }
-
-            if (choice = botPlayer) {
+            if (choice = 1 && botPlayer = 3) {
               alert("You won this round!");
               score();
               document.write("Your score is " + score);
