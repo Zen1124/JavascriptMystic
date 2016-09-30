@@ -1,0 +1,49 @@
+<html>
+  <head>
+  </head>
+  <title> Shell Game</title>
+  <body>
+    <script>
+    var score = 0;
+    var gameRounds = 0;
+    var roundsWanted = Number(prompt("How many rounds do you want to play?"));
+      while (gameRounds < roundsWanted) {
+        var choice = prompt("Rock, Paper, Or Scissors?");
+          function rockPaperScissor() {
+            return Math.floor(3 * Math.random())
+          }
+        rockPaperScissor();
+        var botPlayer = rockPaperScissor();
+          function check() {
+            if (choice = "rock") {
+              var choice = 1;
+            } else if (choice = "paper") {
+              var choice = 2;
+            } else if (choice = "scissors") {
+              var choice = 3;
+            }
+
+            function score() {
+              var score = score + 1;
+
+            }
+
+            if (choice = botPlayer) {
+              alert("You won this round!");
+              score();
+              document.write("Your score is " + score);
+            } else {
+              alert("You lost this round!");
+            }
+
+          }
+        check();
+        var gameRounds = gameRounds + 1;
+      }
+
+
+
+    </script>
+
+  </body>
+</html>
